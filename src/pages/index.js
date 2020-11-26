@@ -1,7 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { Layout, Intro, Background } from "@components"
-import Projects from "../components/projects"
+import { Layout, Intro, Background, Projects, Contact } from "@components"
 
 export default function Home() {
   return (
@@ -18,6 +17,7 @@ export default function Home() {
       <Intro />
       <Background />
       <Projects />
+      <Contact />
     </Layout>
   )
 }

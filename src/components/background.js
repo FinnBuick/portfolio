@@ -31,6 +31,17 @@ const Background = () => {
             <li>Gatsby</li>
           </ul>
         </div>
+        <p>I also have knowledge of these:</p>
+        <div className="knowledge">
+          <ul>
+            <li>Data Structures</li>
+            <li>Algorithms</li>
+            <li>Design Patterns</li>
+            <li>Web Development</li>
+            <li>Systems Programming</li>
+            <li>Software Engineering Practices</li>
+          </ul>
+        </div>
       </div>
     </section>
   )
