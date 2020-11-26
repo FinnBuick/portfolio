@@ -8,9 +8,18 @@
   --secondaryText: #4b5156;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: "Inconsolata", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #404048;
+  line-height: 1.25;
   padding: 0;
   margin: 0;
 }
@@ -22,7 +31,6 @@ h4,
 h5,
 h6,
 strong {
-  color: var(--mainText);
 }
 
 p,
@@ -39,18 +47,30 @@ a {
   color: #17a2bb8;
 }
 
-ul {
-  list-style: none;
-}
-
 h1 {
   font-size: 56px;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 h2 {
+  display: block;
   font-size: 36px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 h3 {
+  display: block;
   font-size: 28px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 h4 {
   font-size: 24px;
@@ -79,28 +99,61 @@ section {
   overflow: auto;
 } */
 
-.main-container {
+.container {
   width: 1200px;
   margin: 0 auto;
 }
 
-.greeting-wrapper {
+.intro {
+  padding: 120px 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.about-wrapper {
+.intro__hello {
+  font-size: 2.5rem;
+}
+
+.intro__tagline {
+  max-width: 1000px;
+}
+
+.intro__contact {
+  font-size: 1.5rem;
+}
+
+.lg-view {
+  display: inline-block;
+}
+
+.sm-view {
+  display: none;
+}
+
+.section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  padding-top: 50px;
-  padding-bottom: 50px;
-  gap: 100px;
+  padding: 120px 100px;
 }
 
-#skills {
+.section__title {
+  color: #007bff;
+}
+
+.skills {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.social-links {
+.skills__category {
+  width: 50%;
+}
+
+.socialLinks {
   display: flex;
   align-content: center;
   text-align: center;
@@ -113,6 +166,50 @@ section {
 
 @media screen and (max-width: 1200px) {
   .main-container {
-    width: 75%;
+    width: 95%;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  .intro {
+    padding: 70px 50px;
+  }
+
+  .intro__hello {
+    font-size: 1.75rem;
+  }
+
+  .intro__tagline {
+    font-size: 1.75rem;
+  }
+
+  .intro__contact {
+    font-size: 1.25rem;
+  }
+
+  .lg-view {
+    display: none;
+  }
+
+  .sm-view {
+    display: inline-block;
+  }
+
+  .section {
+    padding: 70px 50px;
+    display: block;
+    justify-content: center;
+  }
+
+  .section__title {
+    width: auto;
+    text-align: left;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
 }
