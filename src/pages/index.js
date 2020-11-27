@@ -1,11 +1,16 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { Layout, Intro, Background, Projects, Contact } from "@components"
+import { Layout, Intro, Background, Projects, Footer } from "@components"
 
 export default function Home() {
   return (
     <Layout>
       <Helmet>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
         <meta charSet="utf-8" />
         <meta
           name="viewport"
@@ -17,7 +22,7 @@ export default function Home() {
       <Intro />
       <Background />
       <Projects />
-      <Contact />
+      <Footer />
     </Layout>
   )
 }

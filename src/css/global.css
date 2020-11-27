@@ -5,7 +5,9 @@
   --borderColor: #c1c1c1;
 
   --mainText: black;
-  --secondaryText: #4b5156;
+  --secondaryText: #353a3d;
+
+  --accentColor: #007bff;
 }
 
 * {
@@ -42,9 +44,13 @@ textarea {
   color: var(--secondaryText);
 }
 
+li {
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
-  color: #17a2bb8;
+  color: black;
 }
 
 h1 {
@@ -116,14 +122,23 @@ section {
 
 .intro__hello {
   font-size: 2.5rem;
+  font-weight: 800;
 }
 
 .intro__tagline {
   max-width: 1000px;
+  font-weight: 800;
 }
 
 .intro__contact {
   font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.link {
+  color: var(--mainText);
+  text-decoration: underline;
+  text-decoration-color: #007bff;
 }
 
 .lg-view {
@@ -134,14 +149,35 @@ section {
   display: none;
 }
 
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
 .section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding: 120px 100px;
+  font-weight: 700;
 }
 
 .section__title {
-  color: #007bff;
+  color: var(--accentColor);
+  font-weight: 900;
+}
+
+.section__content {
+  padding: 10px;
+  font-weight: 600;
 }
 
 .skills {
@@ -152,11 +188,50 @@ section {
 .skills__category {
   width: 50%;
 }
+.project {
+  padding-bottom: 30px;
+}
 
-.socialLinks {
-  display: flex;
-  align-content: center;
+.project__title {
+  font-weight: 900;
+  display: inline-block;
+}
+
+.project__description {
+  font-weight: 500;
+}
+
+.project__used__item {
+  display: inline-block;
+  margin: 3px 3px 3px 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: var(--accentColor) 1px solid;
+  border-radius: 5px;
+  padding: 2px 5px;
+  color: var(--accentColor);
+}
+
+.footer {
+  display: block;
+}
+
+.footer__copyright {
+  width: auto;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  color: var(--accentColor);
+  position: relative;
+  top: 5px;
+  left: 20px;
 }
 
 #social_img {
@@ -205,6 +280,15 @@ section {
   .section__title {
     width: auto;
     text-align: left;
+    font-size: 1.3rem;
+  }
+
+  .section__content {
+    font-size: 1rem;
+  }
+
+  .project__title {
+    font-size: 1.25rem;
   }
 
   ul {

@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A portfolio website built with gatsby",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -14,6 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "feather-icons": "^4.28.0",
     "fontsource-inconsolata": "^3.0.5",
     "gatsby": "^2.26.1",
     "gatsby-plugin-react-helmet": "^3.5.0",
