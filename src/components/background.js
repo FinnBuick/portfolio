@@ -1,4 +1,5 @@
 import React from "react"
+import feather from "feather-icons"
 
 const Background = () => {
   return (
@@ -41,6 +42,19 @@ const Background = () => {
               <li>Software Engineering Practices</li>
             </ul>
           </div>
+          <a
+            className="project__title resume"
+            href="Resume.pdf"
+            target="_blank"
+          >
+            View my resume
+            <span
+              className="icon arrow"
+              dangerouslySetInnerHTML={{
+                __html: feather.icons["arrow-right"].toSvg(),
+              }}
+            ></span>
+          </a>
         </div>
       </div>
     </section>

@@ -88,10 +88,6 @@ h6 {
   font-size: 16px;
 }
 
-section {
-  height: 100vh;
-}
-
 /* .s1 {
   background-color: var(--mainColor);
   border-bottom: 1px solid var(--borderColor);
@@ -188,6 +184,11 @@ section {
 .skills__category {
   width: 50%;
 }
+
+.resume {
+  padding-top: 30px;
+}
+
 .project {
   padding-bottom: 30px;
 }
@@ -225,18 +226,21 @@ section {
 .socials {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .icon {
   color: var(--accentColor);
-  position: relative;
   top: 5px;
   left: 20px;
+  padding: 10px;
 }
 
-#social_img {
-  width: 100%;
-  border-radius: 100%;
+.arrow {
+  position: relative;
+  top: 6px;
+  left: 0px;
 }
 
 @media screen and (max-width: 1200px) {

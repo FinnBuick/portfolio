@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="section__content">
         <div className="project">
           <div className="project__title">
-            <a href="https://spotify-favourites.herokuapp.com">
+            <a href="https://service-barter-comp4050.firebaseapp.com/">
               Help.me
               <span
                 className="icon arrow"
@@ -58,7 +58,7 @@ const Projects = () => {
         </div>
         <div className="project">
           <div className="project__title">
-            <a href="https://spotify-favourites.herokuapp.com">
+            <a href="https://github.com/FinnBuick/COMP434-CPD">
               Computer Vision Finger Counter
               <span
                 className="icon arrow"
