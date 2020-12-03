@@ -10,10 +10,10 @@ const Intro = () => {
       </h2>
       <h3 className="intro__contact">
         Get in touch{" "}
-        <span className="sm-view" role="img">
+        <span className="sm-view" role="img" aria-label="emoji">
           👇
         </span>
-        <span className="lg-view" role="img">
+        <span className="lg-view" role="img" aria-label="emoji">
           👉
         </span>{" "}
         <a className="link" href="mailto:finnbuick@gmail.com">

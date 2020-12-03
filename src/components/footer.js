@@ -9,7 +9,7 @@ const Footer = () => {
         Finn Buick 🐊 2020
       </div>
       <div className="socials">
-        <a href="mailto:finnbuick@gmail.com" target="_blank">
+        <a href="mailto:finnbuick@gmail.com" target="_blank" rel="noreferrer">
           <span
             className="icon socials__icons"
             dangerouslySetInnerHTML={{
@@ -17,7 +17,11 @@ const Footer = () => {
             }}
           ></span>
         </a>
-        <a href="https://www.linkedin.com/in/finn-buick/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/finn-buick/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span
             className="icon socials__icons"
             dangerouslySetInnerHTML={{
@@ -25,7 +29,11 @@ const Footer = () => {
             }}
           ></span>
         </a>
-        <a href="https://github.com/FinnBuick/" target="_blank">
+        <a
+          href="https://github.com/FinnBuick/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span
             className="icon socials__icons"
             dangerouslySetInnerHTML={{
