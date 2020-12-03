@@ -6,10 +6,6 @@ export default function Home() {
   return (
     <Layout>
       <Helmet>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600;700;800;900&display=swap"
-          rel="stylesheet"
         />
         <meta charSet="utf-8" />
         <meta
