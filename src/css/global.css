@@ -133,17 +133,18 @@ h6 {
 }
 
 .intro__hello {
-  font-size: 2.5rem;
   font-weight: 800;
+  font-size: 2.6rem;
 }
 
 .intro__tagline {
   max-width: 1000px;
   font-weight: 800;
+  font-size: 2.6rem;
 }
 
 .intro__contact {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -181,24 +182,25 @@ h6 {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding: 100px 170px;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   max-width: 90%;
 }
 
 .section__title {
   color: var(--accentColor);
-  font-weight: 900;
+  font-weight: 700;
   margin-right: 70px;
   font-size: 1.1rem;
 }
 
 .section__content {
-  font-weight: 600;
+  font-weight: 500;
   max-width: 550px;
 }
 
 .section__content p {
   margin: 0;
+  font-weight: 500;
 }
 
 .skills {
@@ -219,12 +221,13 @@ h6 {
 }
 
 .project__title {
-  font-weight: 900;
+  font-weight: 800;
   display: inline-block;
 }
 
 .project__description {
   padding-top: 10px;
+  font-weight: 500;
 }
 
 .project__used {
@@ -244,7 +247,7 @@ h6 {
 
 .footer {
   display: block;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
@@ -284,12 +287,12 @@ h6 {
   }
 
   .section__title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding-right: 50px;
   }
 
   .section__content {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .section__content p {
