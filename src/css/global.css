@@ -160,20 +160,29 @@ h6 {
 }
 
 .section {
-  display: grid;
+  display: flex;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  padding: 120px 100px;
+  padding: 100px 170px;
   font-weight: 700;
+  font-size: 0.9rem;
+  max-width: 90%;
 }
 
 .section__title {
   color: var(--accentColor);
   font-weight: 900;
+  margin-right: 70px;
+  font-size: 1.1rem;
 }
 
 .section__content {
-  padding: 10px;
   font-weight: 600;
+  max-width: 550px;
+}
+
+.section__content p {
+  margin: 0;
 }
 
 .skills {
@@ -186,7 +195,7 @@ h6 {
 }
 
 .resume {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .project {
@@ -199,22 +208,27 @@ h6 {
 }
 
 .project__description {
-  font-weight: 500;
+  padding-top: 10px;
+}
+
+.project__used {
+  padding-top: 10px;
 }
 
 .project__used__item {
   display: inline-block;
-  margin: 3px 3px 3px 0;
+  margin: 3px 5px 3px 0;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   border: var(--accentColor) 1px solid;
   border-radius: 5px;
-  padding: 2px 5px;
+  padding: 1px 5px;
   color: var(--accentColor);
 }
 
 .footer {
   display: block;
+  font-size: 0.9rem;
 }
 
 .footer__copyright {
@@ -232,8 +246,6 @@ h6 {
 
 .icon {
   color: var(--accentColor);
-  top: 5px;
-  left: 20px;
   padding: 10px;
 }
 
@@ -243,14 +255,45 @@ h6 {
   left: 0px;
 }
 
-@media screen and (max-width: 1200px) {
-  .main-container {
-    width: 95%;
+@media screen and (max-width: 1280px) {
+  .section {
+    padding: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    padding: 70px;
+  }
+
+  .section__title {
+    font-size: 1.1rem;
+    padding-right: 50px;
+  }
+
+  .section__content {
+    font-size: 1rem;
+  }
+
+  .section__content p {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  .section__content {
+    padding-top: 30px;
+    padding-left: 50px;
   }
 }
 
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .intro {
     padding: 70px 50px;
   }
@@ -276,8 +319,7 @@ h6 {
   }
 
   .section {
-    padding: 70px 50px;
-    display: block;
+    display: grid;
     justify-content: center;
   }
 
@@ -288,16 +330,31 @@ h6 {
   }
 
   .section__content {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   .project__title {
     font-size: 1.25rem;
   }
 
+  .footer {
+    font-size: 1rem;
+  }
+
+  .icon {
+    top: 5px;
+    left: 20px;
+  }
+
   ul {
     padding: 0;
     margin: 0;
     list-style: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__content {
+    padding-left: 30px;
   }
 }

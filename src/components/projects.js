@@ -18,11 +18,11 @@ const Projects = () => {
               ></span>
             </a>
           </div>
-          <p>
+          <div className="project__description">
             An online local marketplace where users can carry out favours for
             others in exchange for favour points, as well as request favours
             themselves.
-          </p>
+          </div>
           <div className="project__used">
             <span className="project__used__item">Typescript</span>
             <span className="project__used__item">React</span>
@@ -43,11 +43,11 @@ const Projects = () => {
               ></span>
             </a>
           </div>
-          <p>
+          <div className="project__description">
             A personal project that uses the Spotify Web API, React and Express
             to present users with a list of their most listened to songs on
             Spotify.
-          </p>
+          </div>
           <div className="project__used">
             <span className="project__used__item">React</span>
             <span className="project__used__item">React-Router</span>
@@ -68,11 +68,11 @@ const Projects = () => {
               ></span>
             </a>
           </div>
-          <p>
+          <div className="project__description">
             A 4th year project that could identify the number of fingers a
             person was holding up in a video stream using computer vision
             techniques.
-          </p>
+          </div>
           <div className="project__used">
             <span className="project__used__item">Python</span>
             <span className="project__used__item">OpenCV</span>
