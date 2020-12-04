@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <Layout>
       <Helmet>
-        />
         <meta charSet="utf-8" />
         <meta
           name="viewport"
