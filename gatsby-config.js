@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-react-helmet`,
+  plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -13,7 +13,9 @@ module.exports = {
         trackingIds: [
           "G-508D1LDCFM"
         ],
+        head: true,
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 }
