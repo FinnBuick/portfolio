@@ -13,6 +13,16 @@ export default function Home() {
         ></meta>
         <title>Finn Buick</title>
         <link rel="canonical" href="http://finnbuick.com/" />
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-508D1LDCFM"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-508D1LDCFM');
+        </script>
       </Helmet>
       <Intro />
       <Background />
