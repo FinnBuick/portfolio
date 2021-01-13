@@ -12,7 +12,7 @@ export default function Home() {
           content="width=device-width, initial-scale=1.0"
         ></meta>
         <title>Finn Buick</title>
-        <link rel="canonical" href="http://finnbuick.com/" />
+        <link rel="canonical" href="https://finnbuick.com/" />
       </Helmet>
       <Intro />
       <Background />
