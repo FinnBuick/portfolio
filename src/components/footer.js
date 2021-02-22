@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer__copyright">
         Developed by <br />
-        Finn Buick 🐊 2020
+        Finn Buick 🚀 2021
       </div>
       <div className="socials">
         <a href="mailto:finnbuick@gmail.com" target="_blank" rel="noreferrer">
