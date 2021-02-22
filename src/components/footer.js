@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="socials">
         <a href="mailto:finnbuick@gmail.com" target="_blank" rel="noreferrer">
           <span
-            className="icon socials__icons"
+            className="socials__icon"
             dangerouslySetInnerHTML={{
               __html: feather.icons["mail"].toSvg(),
             }}
@@ -23,7 +23,7 @@ const Footer = () => {
           rel="noreferrer"
         >
           <span
-            className="icon socials__icons"
+            className="socials__icon"
             dangerouslySetInnerHTML={{
               __html: feather.icons["linkedin"].toSvg(),
             }}
@@ -35,7 +35,7 @@ const Footer = () => {
           rel="noreferrer"
         >
           <span
-            className="icon socials__icons"
+            className="socials__icon"
             dangerouslySetInnerHTML={{
               __html: feather.icons["github"].toSvg(),
             }}

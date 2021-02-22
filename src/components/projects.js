@@ -8,15 +8,18 @@ const Projects = () => {
       <div className="section__content">
         <div className="project">
           <div className="project__title">
-            <a href="https://service-barter-comp4050.firebaseapp.com/">
+            <a
+              className="left"
+              href="https://service-barter-comp4050.firebaseapp.com/"
+            >
               Help.me
-              <span
-                className="icon arrow"
-                dangerouslySetInnerHTML={{
-                  __html: feather.icons["arrow-right"].toSvg(),
-                }}
-              ></span>
             </a>
+            <span
+              className="icon arrow"
+              dangerouslySetInnerHTML={{
+                __html: feather.icons["arrow-right"].toSvg(),
+              }}
+            ></span>
           </div>
           <div className="project__description">
             An online local marketplace where users can carry out favours for
@@ -33,15 +36,15 @@ const Projects = () => {
         </div>
         <div className="project">
           <div className="project__title">
-            <a href="https://spotify-favourites.herokuapp.com">
+            <a className="left" href="https://spotify-favourites.herokuapp.com">
               Spotify Favourites
-              <span
-                className="icon arrow"
-                dangerouslySetInnerHTML={{
-                  __html: feather.icons["arrow-right"].toSvg(),
-                }}
-              ></span>
             </a>
+            <span
+              className="icon arrow"
+              dangerouslySetInnerHTML={{
+                __html: feather.icons["arrow-right"].toSvg(),
+              }}
+            ></span>
           </div>
           <div className="project__description">
             A personal project that uses the Spotify Web API, React and Express
@@ -58,15 +61,15 @@ const Projects = () => {
         </div>
         <div className="project">
           <div className="project__title">
-            <a href="https://github.com/FinnBuick/COMP434-CPD">
+            <a className="left" href="https://github.com/FinnBuick/COMP434-CPD">
               Computer Vision Finger Counter
-              <span
-                className="icon arrow"
-                dangerouslySetInnerHTML={{
-                  __html: feather.icons["arrow-right"].toSvg(),
-                }}
-              ></span>
             </a>
+            <span
+              className="icon arrow"
+              dangerouslySetInnerHTML={{
+                __html: feather.icons["arrow-right"].toSvg(),
+              }}
+            ></span>
           </div>
           <div className="project__description">
             A 4th year project that could identify the number of fingers a

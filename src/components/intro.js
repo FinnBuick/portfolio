@@ -16,7 +16,7 @@ const Intro = () => {
         <span className="lg-view" role="img" aria-label="emoji">
           👉
         </span>{" "}
-        <a className="link" href="mailto:finnbuick@gmail.com">
+        <a className="link left" href="mailto:finnbuick@gmail.com">
           finnbuick@gmail.com
         </a>
       </h3>

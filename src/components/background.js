@@ -43,18 +43,18 @@ const Background = () => {
             <li>Software Engineering Practices</li>
           </ul>
           <a
-            className="project__title resume"
+            className="project__title resume left"
             href="Resume.pdf"
             target="_blank"
           >
             View my resume
-            <span
-              className="icon arrow"
-              dangerouslySetInnerHTML={{
-                __html: feather.icons["arrow-right"].toSvg(),
-              }}
-            ></span>
           </a>
+          <span
+            className="icon arrow"
+            dangerouslySetInnerHTML={{
+              __html: feather.icons["arrow-right"].toSvg(),
+            }}
+          ></span>
         </div>
       </div>
     </section>

@@ -69,6 +69,27 @@ a {
   color: black;
 }
 
+a.left {
+  position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -6px;
+  left: 0;
+  background-color: var(--accentColor);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 h1 {
   font-size: 56px;
   display: block;
@@ -137,8 +158,6 @@ h6 {
 
 .link {
   color: var(--mainText);
-  text-decoration: underline;
-  text-decoration-color: #007bff;
 }
 
 .lg-view {
@@ -230,12 +249,19 @@ h6 {
   border-radius: 5px;
   padding: 1px 5px;
   color: var(--accentColor);
+  transition: all 0.3s ease-in-out;
+}
+
+.project__used__item:hover {
+  background-color: var(--accentColor);
+  color: #fff;
 }
 
 .footer {
   display: block;
   font-size: 1.2rem;
   font-weight: 400;
+  padding-bottom: 40px;
 }
 
 .footer__copyright {
@@ -244,14 +270,17 @@ h6 {
   margin-bottom: 20px;
 }
 
+.icon {
+  color: var(--accentColor);
+}
+
 .socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
 }
 
-.icon {
+.socials__icon {
   color: var(--accentColor);
   padding: 10px;
 }
