@@ -1,5 +1,5 @@
-import React from "react"
-import feather from "feather-icons"
+import React from 'react'
+import feather from 'feather-icons'
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
           <span
             className="socials__icon"
             dangerouslySetInnerHTML={{
-              __html: feather.icons["mail"].toSvg(),
+              __html: feather.icons['mail'].toSvg(),
             }}
           ></span>
         </a>
@@ -25,7 +25,7 @@ const Footer = () => {
           <span
             className="socials__icon"
             dangerouslySetInnerHTML={{
-              __html: feather.icons["linkedin"].toSvg(),
+              __html: feather.icons['linkedin'].toSvg(),
             }}
           ></span>
         </a>
@@ -37,7 +37,7 @@ const Footer = () => {
           <span
             className="socials__icon"
             dangerouslySetInnerHTML={{
-              __html: feather.icons["github"].toSvg(),
+              __html: feather.icons['github'].toSvg(),
             }}
           ></span>
         </a>

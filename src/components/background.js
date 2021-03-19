@@ -1,5 +1,5 @@
-import React from "react"
-import feather from "feather-icons"
+import React from 'react'
+import feather from 'feather-icons'
 
 const Background = () => {
   return (
@@ -52,7 +52,7 @@ const Background = () => {
           <span
             className="icon arrow"
             dangerouslySetInnerHTML={{
-              __html: feather.icons["arrow-right"].toSvg(),
+              __html: feather.icons['arrow-right'].toSvg(),
             }}
           ></span>
         </div>

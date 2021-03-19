@@ -1,8 +1,8 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { Layout, Intro, Background, Projects, Footer } from "@components"
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { Layout, Intro, Background, Projects, Footer } from '@components'
 
-export default function Home() {
+export default function Index() {
   return (
     <Layout>
       <Helmet>

@@ -1,5 +1,5 @@
-import React from "react"
-import feather from "feather-icons"
+import React from 'react'
+import feather from 'feather-icons'
 
 const Projects = () => {
   return (
@@ -17,7 +17,7 @@ const Projects = () => {
             <span
               className="icon arrow"
               dangerouslySetInnerHTML={{
-                __html: feather.icons["arrow-right"].toSvg(),
+                __html: feather.icons['arrow-right'].toSvg(),
               }}
             ></span>
           </div>
@@ -42,7 +42,7 @@ const Projects = () => {
             <span
               className="icon arrow"
               dangerouslySetInnerHTML={{
-                __html: feather.icons["arrow-right"].toSvg(),
+                __html: feather.icons['arrow-right'].toSvg(),
               }}
             ></span>
           </div>
@@ -67,7 +67,7 @@ const Projects = () => {
             <span
               className="icon arrow"
               dangerouslySetInnerHTML={{
-                __html: feather.icons["arrow-right"].toSvg(),
+                __html: feather.icons['arrow-right'].toSvg(),
               }}
             ></span>
           </div>
