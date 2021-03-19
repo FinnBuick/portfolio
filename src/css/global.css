@@ -24,15 +24,15 @@
 }
 
 :root {
-  --mainColor: #eaeaea;
+  /* --mainColor: #eaeaea;
   --secondaryColor: #fff;
 
   --borderColor: #c1c1c1;
 
-  --mainText: black;
-  --secondaryText: #353a3d;
+  --mainText: black; */
+  /* --secondaryText: #353a3d; */
 
-  --accentColor: #007bff;
+  /* --accentColor: #007bff; */
 }
 
 * {
@@ -45,10 +45,28 @@ html,
 body {
   font-family: "Inconsolata", sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #404048;
   line-height: 1.25;
   padding: 0;
   margin: 0;
+
+  --bg: white;
+  --textNormal: #404048;
+  --textTitle: #222;
+  --textLink: #007bff;
+  --hr: hsla(0, 0%, 0%, 0.2);
+
+  background-color: var(--bg);
+  color: var(--textNormal);
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: #1f2933;
+  --textNormal: rgba(255, 255, 255, 0.87);
+  --textTitle: rgba(255, 255, 255.87);
+  --textLink: #007bff;
+  --hr: hsla(0, 0%, 100%, 0.2);
 }
 
 p,
@@ -57,7 +75,7 @@ span,
 label,
 input,
 textarea {
-  color: var(--secondaryText);
+  color: var(--textNormal);
 }
 
 li {
@@ -66,7 +84,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--textTitle);
 }
 
 a.left {
@@ -80,7 +98,7 @@ a.left:before {
   height: 3px;
   bottom: -6px;
   left: 0;
-  background-color: var(--accentColor);
+  background-color: var(--textLink);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -128,6 +146,86 @@ h6 {
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.switch-wrapper span svg {
+  width: 18px;
+  height: 18px;
+}
+
+.toggle-wrapper {
+  margin: 10px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+input:checked + .slider {
+  background-color: var(--textLink);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--textLink);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 25px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .intro {
@@ -193,7 +291,7 @@ h6 {
 }
 
 .section__title {
-  color: var(--accentColor);
+  color: var(--textLink);
   font-weight: 700;
   margin-right: 70px;
   font-size: 1.1rem;
@@ -245,15 +343,15 @@ h6 {
   margin: 3px 5px 3px 0;
   font-weight: 600;
   font-size: 0.9rem;
-  border: var(--accentColor) 1px solid;
+  border: var(--textLink) 1px solid;
   border-radius: 5px;
   padding: 1px 5px;
-  color: var(--accentColor);
+  color: var(--textLink);
   transition: all 0.3s ease-in-out;
 }
 
 .project__used__item:hover {
-  background-color: var(--accentColor);
+  background-color: var(--textLink);
   color: #fff;
 }
 
@@ -271,7 +369,7 @@ h6 {
 }
 
 .icon {
-  color: var(--accentColor);
+  color: var(--textLink);
 }
 
 .socials {
@@ -281,7 +379,7 @@ h6 {
 }
 
 .socials__icon {
-  color: var(--accentColor);
+  color: var(--textLink);
   padding: 10px;
 }
 

@@ -1,4 +1,5 @@
 export { default as Layout } from "./layout";
+export { default as Toggle } from "./toggle";
 export { default as Intro } from "./intro";
 export { default as Background } from "./background";
 export { default as Projects } from "./projects";

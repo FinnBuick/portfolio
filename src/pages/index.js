@@ -1,8 +1,15 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Layout, Intro, Background, Projects, Footer } from "@components";
+import {
+  Layout,
+  Toggle,
+  Intro,
+  Background,
+  Projects,
+  Footer,
+} from "@components";
 
-export default function Index() {
+const Index = () => {
   return (
     <Layout>
       <Helmet>
@@ -14,10 +21,13 @@ export default function Index() {
         <title>Finn Buick</title>
         <link rel="canonical" href="https://finnbuick.com/" />
       </Helmet>
+      <Toggle />
       <Intro />
       <Background />
       <Projects />
       <Footer />
     </Layout>
   );
-}
+};
+
+export default Index;
