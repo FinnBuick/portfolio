@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Intro = () => {
   return (
@@ -9,19 +9,19 @@ const Intro = () => {
         problems and build useful things.
       </h2>
       <h3 className="intro__contact">
-        Get in touch{' '}
+        Get in touch{" "}
         <span className="sm-view" role="img" aria-label="emoji">
           👇
         </span>
         <span className="lg-view" role="img" aria-label="emoji">
           👉
-        </span>{' '}
+        </span>{" "}
         <a className="link left" href="mailto:finnbuick@gmail.com">
           finnbuick@gmail.com
         </a>
       </h3>
     </header>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;
