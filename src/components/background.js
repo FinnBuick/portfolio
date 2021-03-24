@@ -25,6 +25,7 @@ const Background = () => {
           <div className="skills__category">
             <ul>
               <li>React</li>
+              <li>Webpack</li>
               <li>Material-UI</li>
               <li>Firebase</li>
               <li>Express</li>

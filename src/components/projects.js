@@ -30,6 +30,12 @@ const Projects = () => {
             <span className="project__used__item">Typescript</span>
             <span className="project__used__item">React</span>
             <span className="project__used__item">Firebase</span>
+            <span className="project__used__item">
+              Firebase Cloud Functions
+            </span>
+            <span className="project__used__item">
+              Firebase Cloud Messaging
+            </span>
             <span className="project__used__item">React-Router</span>
             <span className="project__used__item">Material-UI</span>
           </div>
@@ -79,6 +85,35 @@ const Projects = () => {
           <div className="project__used">
             <span className="project__used__item">Python</span>
             <span className="project__used__item">OpenCV</span>
+            <span className="project__used__item">Matplotlib</span>
+            <span className="project__used__item">Numpy</span>
+          </div>
+        </div>
+        <div className="project">
+          <div className="project__title">
+            <a
+              className="left"
+              href="https://github.com/FinnBuick/CafeShenkin-iOS-Loyalty-App"
+            >
+              Café Shenkin Loyalty Rewards App
+            </a>
+            <span
+              className="icon arrow"
+              dangerouslySetInnerHTML={{
+                __html: feather.icons["arrow-right"].toSvg(),
+              }}
+            ></span>
+          </div>
+          <div className="project__description">
+            A group project in collaboration with sydney based Café Shenkin to
+            develop an iOS app to track customer purchases using generated QR
+            codes, rewarding users with deals & discounts. Written in Swift
+            using Firebase Cloud Firestore & Authentication.
+          </div>
+          <div className="project__used">
+            <span className="project__used__item">Swift</span>
+            <span className="project__used__item">UIKit</span>
+            <span className="project__used__item">Firebase</span>
           </div>
         </div>
       </div>
