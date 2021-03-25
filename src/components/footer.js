@@ -4,10 +4,6 @@ import feather from "feather-icons";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer__copyright">
-        Developed by <br />
-        Finn Buick 🚀 2021
-      </div>
       <div className="socials">
         <a href="mailto:finnbuick@gmail.com" target="_blank" rel="noreferrer">
           <span
@@ -42,6 +38,7 @@ const Footer = () => {
           ></span>
         </a>
       </div>
+      <div className="footer__copyright">Finn Buick &copy; 2021</div>
     </div>
   );
 };

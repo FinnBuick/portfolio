@@ -365,7 +365,7 @@ input:checked + .slider:before {
 .footer__copyright {
   width: auto;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .icon {
