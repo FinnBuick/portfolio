@@ -38,7 +38,7 @@ const Footer = () => {
           ></span>
         </a>
       </div>
-      <div className="footer__copyright">Finn Buick &copy; 2021</div>
+      <div className="footer__copyright">Finn Buick &copy; {new Date().getFullYear()}</div>
     </div>
   );
 };
