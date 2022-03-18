@@ -1,5 +1,5 @@
-import React from "react";
-import feather from "feather-icons";
+import React from "react"
+import feather from "feather-icons"
 
 const Projects = () => {
   return (
@@ -10,6 +10,42 @@ const Projects = () => {
           <div className="project__title">
             <a
               className="left"
+              target="_blank"
+              href="https://app.upstreet.co/sign-up"
+            >
+              Upstreet Web App
+            </a>
+            <span
+              className="icon arrow"
+              dangerouslySetInnerHTML={{
+                __html: feather.icons["arrow-right"].toSvg(),
+              }}
+            ></span>
+          </div>
+          <div className="project__description">
+            A web app for {<a href="https://www.upstreet.co/">Upstreet</a>}, a
+            startup that helps people earn shares as they shop. I was the lead
+            fullstack developer on this project, responsible for solution
+            design, planning and implementation. Utilized test driven
+            development to build out and deploy the app in less than 5 months.
+          </div>
+          <div className="project__used">
+            <span className="project__used__item">Typescript</span>
+            <span className="project__used__item">React</span>
+            <span className="project__used__item">Firebase</span>
+            <span className="project__used__item">Cloud Functions</span>
+            <span className="project__used__item">Cloud Storage</span>
+            <span className="project__used__item">Material UI</span>
+            <span className="project__used__item">React-Router</span>
+            <span className="project__used__item">Jest</span>
+            <span className="project__used__item">React Testing Library</span>
+          </div>
+        </div>
+        <div className="project">
+          <div className="project__title">
+            <a
+              className="left"
+              target="_blank"
               href="https://service-barter-comp4050.firebaseapp.com/"
             >
               Help.me
@@ -42,7 +78,11 @@ const Projects = () => {
         </div>
         <div className="project">
           <div className="project__title">
-            <a className="left" href="https://spotify-favourites.herokuapp.com">
+            <a
+              className="left"
+              target="_blank"
+              href="https://spotify-favourites.herokuapp.com"
+            >
               Spotify Favourites
             </a>
             <span
@@ -67,7 +107,11 @@ const Projects = () => {
         </div>
         <div className="project">
           <div className="project__title">
-            <a className="left" href="https://github.com/FinnBuick/COMP434-CPD">
+            <a
+              className="left"
+              target="_blank"
+              href="https://github.com/FinnBuick/COMP434-CPD"
+            >
               Computer Vision Finger Counter
             </a>
             <span
@@ -93,6 +137,7 @@ const Projects = () => {
           <div className="project__title">
             <a
               className="left"
+              target="_blank"
               href="https://github.com/FinnBuick/CafeShenkin-iOS-Loyalty-App"
             >
               Café Shenkin Loyalty Rewards App
@@ -118,7 +163,7 @@ const Projects = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

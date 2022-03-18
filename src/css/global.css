@@ -84,7 +84,7 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--textTitle);
+  color: var(--textLink);
 }
 
 a.left {

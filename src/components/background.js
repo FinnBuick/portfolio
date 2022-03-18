@@ -1,5 +1,5 @@
-import React from "react";
-import feather from "feather-icons";
+import React from "react"
+import feather from "feather-icons"
 
 const Background = () => {
   return (
@@ -7,9 +7,13 @@ const Background = () => {
       <div className="section__title">Background</div>
       <div className="section__content">
         <p>
-          I'm a fourth year software engineering student at Macquarie
-          University. I like to build things for the web.
+          I'm a software engineer with a passion for building things that
+          positively impact peoples lives. I'm currently working at{" "}
+          {<a href="https://www.upstreet.co/">Upstreet</a>}, a Sydney-based
+          startup that helps people build a share portfolio while shopping
+          online.
         </p>
+        <br />
         <p>Here are a few technologies I have experience with:</p>
         <div className="skills">
           <div className="skills__category">
@@ -20,6 +24,7 @@ const Background = () => {
               <li>Python</li>
               <li>Java</li>
               <li>SQL</li>
+              <li>GCP (Functions, Build, Run, Storage)</li>
             </ul>
           </div>
           <div className="skills__category">
@@ -30,6 +35,7 @@ const Background = () => {
               <li>Firebase</li>
               <li>Express</li>
               <li>Gatsby</li>
+              <li>Communication</li>
             </ul>
           </div>
         </div>
@@ -45,7 +51,7 @@ const Background = () => {
           </ul>
           <a
             className="project__title resume left"
-            href="Resume.pdf"
+            href="FinnBuickResume.pdf"
             target="_blank"
           >
             View my resume
@@ -59,7 +65,7 @@ const Background = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Background;
+export default Background

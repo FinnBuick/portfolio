@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"
 
 const Intro = () => {
   return (
     <header className="intro">
-      <h1 className="intro__hello">Hi, I'm Finn Buick</h1>
+      <h1 className="intro__hello">Hi, I'm Finn,</h1>
       <h2 className="intro__tagline">
         I'm a software engineer, based in Sydney. <br />I like to learn, solve
         problems and build useful things.
@@ -21,7 +21,7 @@ const Intro = () => {
         </a>
       </h3>
     </header>
-  );
-};
+  )
+}
 
-export default Intro;
+export default Intro
