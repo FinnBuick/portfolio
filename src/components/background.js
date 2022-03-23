@@ -14,7 +14,7 @@ const Background = () => {
           online.
         </p>
         <br />
-        <p>Here are a few technologies I have experience with:</p>
+        <p>My skill set includes:</p>
         <div className="skills">
           <div className="skills__category">
             <ul>
