@@ -1,5 +1,5 @@
-import React from "react"
 import feather from "feather-icons"
+import React from "react"
 
 const Projects = () => {
   return (
@@ -24,7 +24,7 @@ const Projects = () => {
           </div>
           <div className="project__description">
             A web app for {<a href="https://www.upstreet.co/">Upstreet</a>}, a
-            startup that helps people earn shares as they shop. I was the lead
+            startup that helps people earn shares as they shop. I am the lead
             fullstack developer on this project, responsible for solution
             design, planning and implementation. Utilized test driven
             development to build out and deploy the app in less than 5 months.
